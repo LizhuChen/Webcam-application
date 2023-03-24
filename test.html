@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Opencv.js exercise #3: access the camera</title>
+  <meta charset="utf-8">
+</head>  
+<body>
+  <section id="cameraSection">
+  <h2 id='status'>opencv.js is loading...</h2> 
+      <div>
+        <button id="Case1_Button" disabled>Mission 1</button>
+      </div>
+	  <p>
+      <div
+        <button id="enableWebcamButton" disabled>Open the camera</button>
+        <button id="disableWebcamButton" disabled>Close the camera</button>
+      </div>
+	  <br>
+	  </div>
+		<font size=2>請輸入T(H):</font>
+	    <input id="TH" type="text" name="TH_value"  size="10" maxlength="10" disabled>
+		<font size=2>請輸入T(L):</font>
+		<input id="TL" type="text" name="TL_value"  size="10" maxlength="10" disabled>
+	  </div>
+	  <p>
+      <div id="liveView">  
+        <video id="webcam" autoplay width="320" height="240"></video>
+        <canvas id="outputCanvas"></canvas>
+      </div>
+	  <p>
+      <div>
+        <button id="Case2_Button" disabled>Mission 2</button>
+      </div>
+	  <p>
+	  <div>
+        <button id="enableWebcamButton2" disabled>Open the camera</button>
+        <button id="disableWebcamButton2" disabled>Close the camera</button>
+      </div>
+	  <br>
+      <div id="liveView2">  
+        <video id="webcam2" autoplay width="320" height="240"></video>
+        <canvas id="outputCanvas2"></canvas>
+      </div>
+  </section>
+  
+  <!-- Import the page's JavaScript to do some stuff -->
+  <script src="tea.js"></script>
+  <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+</body>
+</html>
